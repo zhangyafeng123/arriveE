@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="beizhu" rowHeight="134" id="KGk-i7-Jjw" customClass="beizhuCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjM-Er-k5W">
+                        <rect key="frame" x="20" y="5" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="5NB-bQ-3pP"/>
+                            <constraint firstAttribute="height" constant="20" id="pm5-cA-89l"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKs-VX-3OQ">
+                        <rect key="frame" x="20" y="30" width="80" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="2bR-i1-OIk"/>
+                            <constraint firstAttribute="height" constant="40" id="DXI-hD-onS"/>
+                        </constraints>
+                        <state key="normal" image="支付方式"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LjM-Er-k5W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="1qS-yf-IuR"/>
+                    <constraint firstItem="qKs-VX-3OQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9ka-ey-HTc"/>
+                    <constraint firstItem="qKs-VX-3OQ" firstAttribute="top" secondItem="LjM-Er-k5W" secondAttribute="bottom" constant="5" id="K6m-2e-xPt"/>
+                    <constraint firstItem="LjM-Er-k5W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="TYE-DX-rA9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgbtn" destination="qKs-VX-3OQ" id="PXa-dQ-mPK"/>
+                <outlet property="titilelab" destination="LjM-Er-k5W" id="aBU-PE-drE"/>
+            </connections>
+            <point key="canvasLocation" x="-175" y="68"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="支付方式" width="22" height="21"/>
+    </resources>
+</document>
